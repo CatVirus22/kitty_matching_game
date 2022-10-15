@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matching Game</title>
+
+    <link rel="stylesheet" href="src/styles_matching_game.css" />
+  </head>
+  <body>
+    <h1>Kitties Matching Game</h1>
+    <form id="checkbox">
+      <div class="box">
+        <label>
+          <input
+            #boxes
+            type="checkbox"
+            class="checkbox"
+            id="box1"
+            onclick="disableBtn(this)"
+          />
+          <i></i>
+        </label>
+        <label>
+          <input
+            #boxes
+            type="checkbox"
+            class="checkbox"
+            id="box2"
+            onclick="disableBtn(this)"
+          />
+          <i></i>
+        </label>
+        <label>
+          <input
+            #boxes
+            type="checkbox"
+            class="checkbox"
+            id="box3"
+            onclick="disableBtn(this)"
+          />
+          <i></i>
+        </label>
+      </div>
+      <div class="button">
+        <input
+          type="button"
+          id="resetBtn"
+          value="Reset game"
+          onclick="resetBox()"
+          onclick="enableBtn(this)"
+        />
+      </div>
+    </form>
+
+    <script src="src/index_matching_game.js"></script>
+  </body>
+</html>

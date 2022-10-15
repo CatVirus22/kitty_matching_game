@@ -1,0 +1,110 @@
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  color: salmon;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+}
+
+body {
+  box-sizing: border-box;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/506/original/8107186.jpg?1665715074);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  position: relative;
+  width: 828px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #444;
+}
+
+.box label {
+  position: relative;
+  width: 100%;
+  height: 33.333%;
+  border: 0.5px solid #444;
+}
+
+/*
+.box label input {
+  appearance: none;
+} */
+
+.box label i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 1200;
+}
+
+.box label:nth-child(1) i {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/503/original/UNO_PNG.png?1665714261);
+  /* background-color: aquamarine; */
+  animation: animate 0.5s steps(3) infinite;
+}
+
+.box label:nth-child(2) i {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/504/original/DOS_PNG.png?1665714581);
+  background-color: rgb(143, 116, 179);
+  animation: animate 0.4s steps(3) infinite;
+}
+
+.box label:nth-child(3) i {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/048/505/original/TRES_PNG.png?1665714592);
+  background-color: rgb(120, 198, 218);
+  animation: animate 0.7s steps(3) infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 828px;
+  }
+}
+
+.box label input:checked ~ i {
+  animation-play-state: paused;
+}
+
+.button {
+  padding-top: 50px;
+}
+
+#resetBtn {
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 165px;
+  height: 46px;
+  color: whitesmoke;
+  border: 1px solid rgb(43, 42, 42);
+  border-radius: 12px;
+  background-color: rgb(37, 186, 223);
+  margin: 0 auto;
+  transition: background-color ease-out 100ms;
+  display: grid;
+}
+
+#resetBtn:hover {
+  background-color: rgb(21, 140, 170);
+  cursor: pointer;
+}
