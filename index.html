@@ -9,37 +9,19 @@
     <link rel="stylesheet" href="src/styles_matching_game.css" />
   </head>
   <body>
-    <h1>Kitties Matching Game</h1>
-    <form id="checkbox">
+    <h1>Kitty Matching Game</h1>
+    <form id="checkboxes">
       <div class="box">
         <label>
-          <input
-            #boxes
-            type="checkbox"
-            class="checkbox"
-            id="box1"
-            onclick="disableBtn(this)"
-          />
+          <input #boxes type="checkbox" class="checkbox" id="box1" />
           <i></i>
         </label>
         <label>
-          <input
-            #boxes
-            type="checkbox"
-            class="checkbox"
-            id="box2"
-            onclick="disableBtn(this)"
-          />
+          <input #boxes type="checkbox" class="checkbox" id="box2" />
           <i></i>
         </label>
         <label>
-          <input
-            #boxes
-            type="checkbox"
-            class="checkbox"
-            id="box3"
-            onclick="disableBtn(this)"
-          />
+          <input #boxes type="checkbox" class="checkbox" id="box3" />
           <i></i>
         </label>
       </div>
@@ -49,7 +31,6 @@
           id="resetBtn"
           value="Reset game"
           onclick="resetBox()"
-          onclick="enableBtn(this)"
         />
       </div>
     </form>
